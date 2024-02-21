@@ -1,4 +1,4 @@
-FROM composer:latest
+FROM php:7.4-cli
 
 # ADD and set Group
 RUN addgroup -g 1000 laravel && adduser -G laravel -g laravel -s /bin/sh -D laravel
